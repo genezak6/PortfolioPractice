@@ -1,1 +1,18 @@
-<div class='container container__landing-page'>
+* {
+  margin: 0;
+  padding: 0;
+  border: 1px solid red;
+}
+
+.container__landing-page {
+  background-image: url(./images/intro-bg.jpg);
+  background-position: bottom;
+  background-size: cover;
+  height: 100vh;
+}
+
+.container__landing-page--overlay {
+  background: rgb(18, 18, 18);
+  opacity:0.80;
+  height: 100vh;
+}
