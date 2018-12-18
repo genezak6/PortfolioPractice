@@ -9,10 +9,28 @@
   background-position: bottom;
   background-size: cover;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
 }
 
 .container__landing-page--overlay {
   background: rgb(18, 18, 18);
   opacity:0.80;
-  height: 100vh;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.title__container {
+  z-index: 1;
+  color: #eeee;
+  text-align: center;
+}
+
+.title__sub-title--intro {
+  font-family: "Poppins";
+  font-weight: 600;
 }
