@@ -17,15 +17,16 @@ html {
 .menu {
   position: fixed;
   top: 0;
-  left: 50px;
+  left: 32em;
   color: white;
-  z-index: 2;
+  z-index: 3;
   display: flex;
   justify-content: center;
   align-items: center;
   background: black;
   height: 5rem;
   padding: 2rem;
+  min-width: 15rem;
 }
 
 .menu__hamburger--bar {
@@ -34,9 +35,11 @@ html {
   margin-bottom: 5px;
   background: #cc005f;
 }
-.menu__hamburger--bottom-bar {
+
+.menu__hamburger:nth-child(1) {
   margin-bottom: 0;
 }
+
 .menu__title {
   font-family: "Poppins", sans-serif;
   letter-spacing: 0.7rem;
@@ -44,7 +47,29 @@ html {
   font-weight: 700;
   margin-left: 2.3rem;
 }
+.menu__open {
+  position: fixed;
+  top: -32rem;
+  left: 32rem;
+  color: #eee;
+  min-width: 18.41rem;
+  height: 37rem;
+  background: black;
+  z-index: 2;
+  transition: all 0.3s ease-in-out;
+}
 
+.toggle {
+  top: 5rem;
+}
+
+ul {
+  padding: 2rem 2rem;
+  list-style-type: none;
+  font-family: "Poppins", sans-serif;
+  line-height: 3;
+  font-size: 1.6rem;
+}
 .container__landing-page {
   background-image: url("./images/intro-bg.jpg");
   background-position: bottom;
